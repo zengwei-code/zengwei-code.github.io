@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zeng Wei | AI for Games Researcher</title>
+  <meta name="description" content="Zeng Wei (曾伟) — PhD student at AI Game Lab, SUSTech & ZGC Academy. Research on generative game engines, real-time neural rendering, and video generation acceleration.">
+  <meta name="keywords" content="Zeng Wei, 曾伟, AI for Games, Generative Game Engine, GPU, CUDA, Neural Rendering, PhD, Tsinghua University">
+  <meta name="author" content="Zeng Wei">
+
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:title" content="Zeng Wei | AI for Games Researcher">
+  <meta property="og:description" content="PhD student building next-generation game engines with generative AI. First-author paper achieving 50× throughput in real-time neural game rendering.">
+  <meta property="og:image" content="assets/photo.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon: game controller emoji -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =============================================
+       NAVIGATION
+       ============================================= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">ZW<span>.</span></a>
+      <div class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#news" class="nav-link">News</a>
+        <a href="#research" class="nav-link">Research</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- =============================================
+       HERO SECTION
+       ============================================= -->
+  <section id="hero" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting fade-in">Hello, I'm</p>
+        <h1 class="hero-name fade-in">
+          <span class="name-zh">曾伟</span>
+          <span class="name-en">Zeng Wei</span>
+        </h1>
+        <p class="hero-title fade-in">AI for Games Researcher</p>
+        <p class="hero-subtitle fade-in">
+          PhD Student · AI Game Lab · SUSTech &amp; ZGC Academy
+        </p>
+        <p class="hero-tagline fade-in">
+          Building the next generation of game engines with generative AI.
+        </p>
+        <div class="hero-cta fade-in">
+          <a href="mailto:s-zw24@bjzgca.edu.cn" class="btn btn-primary">
+            <i class="fas fa-envelope"></i> Email Me
+          </a>
+          <a href="https://github.com/zengwei-code" target="_blank" class="btn btn-outline">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://arxiv.org/abs/2602.00608" target="_blank" class="btn btn-outline">
+            <i class="fas fa-file-alt"></i> Paper
+          </a>
+        </div>
+      </div>
+      <div class="hero-photo fade-in">
+        <div class="photo-ring">
+          <img src="assets/photo.jpg" alt="Zeng Wei - AI for Games Researcher">
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       ABOUT SECTION
+       ============================================= -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="title-icon"><i class="fas fa-user"></i></span>
+        About Me
+      </h2>
+      <div class="about-content">
+        <div class="about-text reveal">
+          <p>
+            I am a PhD student at <strong>AI Game Lab</strong> (SUSTech &amp; ZGC Academy),
+            focusing on <em>AI for Games</em> — bridging cutting-edge generative AI research
+            with real-time game engine technology. I hold a Master's degree from
+            <strong>Tsinghua University</strong> and bring 1.5 years of industry experience
+            as a GPU system algorithm engineer at CEC Group.
+          </p>
+          <p>
+            My first-author research on <em>Scalable Generative Game Engines</em> achieves
+            real-time 720p neural game rendering with <strong>50&times; throughput improvement</strong>,
+            published on arXiv 2026. I'm passionate about pushing the boundaries of
+            interactive entertainment through AI innovation — from generative world models
+            to real-time neural rendering and video generation acceleration.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card reveal">
+            <div class="stat-icon"><i class="fas fa-award"></i></div>
+            <div class="stat-value">1st Author</div>
+            <div class="stat-label">arXiv Paper</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-icon"><i class="fas fa-bolt"></i></div>
+            <div class="stat-value">50&times;</div>
+            <div class="stat-label">Throughput Boost</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="stat-value">1.5 yr</div>
+            <div class="stat-label">Industry Experience</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="stat-value">Tsinghua</div>
+            <div class="stat-label">Master's Degree</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       NEWS SECTION
+       ============================================= -->
+  <!-- ⬇️ HOW TO ADD NEWS: Copy a <div class="news-item"> block and paste
+       it at the TOP of the news-list. Newest items go first! -->
+  <section id="news" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="title-icon"><i class="fas fa-bullhorn"></i></span>
+        Latest News
+      </h2>
+      <div class="news-list">
+        <!-- ===== ADD NEW NEWS ITEMS HERE (at the top) ===== -->
+        <div class="news-item reveal">
+          <span class="news-date">2026.02</span>
+          <span class="news-badge new">New</span>
+          <p>First-author paper <a href="https://arxiv.org/abs/2602.00608" target="_blank">"Scalable Generative Game Engine"</a> published on arXiv — achieving 50&times; throughput in real-time neural game rendering.</p>
+        </div>
+        <div class="news-item reveal">
+          <span class="news-date">2024.09</span>
+          <p>Started PhD program at <strong>AI Game Lab</strong>, SUSTech &amp; ZGC Academy, focusing on AI for Games.</p>
+        </div>
+        <div class="news-item reveal">
+          <span class="news-date">2023.07</span>
+          <p>Joined <strong>CEC Microelectronics</strong> as GPU System Algorithm Engineer — CUDA kernel optimization &amp; AIGC deployment on domestic GPU chips.</p>
+        </div>
+        <div class="news-item reveal">
+          <span class="news-date">2023.07</span>
+          <p>Graduated from <strong>Tsinghua University</strong> with M.S. in Electronic Information.</p>
+        </div>
+        <!-- ===== END NEWS ITEMS ===== -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       RESEARCH SECTION
+       ============================================= -->
+  <section id="research" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="title-icon"><i class="fas fa-atom"></i></span>
+        Research
+      </h2>
+      <p class="section-desc reveal">
+        My research lies at the intersection of generative AI, real-time rendering,
+        and game engine technology — building systems that bring AI-generated worlds to life in real time.
+      </p>
+
+      <!-- Featured Paper -->
+      <div class="paper-card featured reveal">
+        <div class="paper-badge">Featured &middot; First Author</div>
+        <h3 class="paper-title">
+          Scalable Generative Game Engine: Breaking the Resolution Wall via Hardware-Algorithm Co-Design
+        </h3>
+        <p class="paper-meta">
+          <strong>Wei Zeng</strong>, Xuchen Li, Ruili Feng, Zhen Liu, Fengwei An, Jian Zhao
+          &nbsp;&middot;&nbsp; arXiv 2026
+        </p>
+        <div class="paper-links">
+          <a href="https://arxiv.org/abs/2602.00608" target="_blank" class="paper-link">
+            <i class="fas fa-file-pdf"></i> arXiv
+          </a>
+          <!-- TODO: Add GitHub repo link when available -->
+          <!-- <a href="https://github.com/..." target="_blank" class="paper-link">
+            <i class="fab fa-github"></i> Code
+          </a> -->
+          <!-- TODO: Add project page link when available -->
+          <!-- <a href="..." target="_blank" class="paper-link">
+            <i class="fas fa-globe"></i> Project Page
+          </a> -->
+        </div>
+
+        <div class="paper-figure">
+          <img src="assets/paper-teaser.png" alt="System Architecture: Heterogeneous NPU Cluster with Control Plane and Data Plane for real-time generative game engine">
+        </div>
+
+        <div class="paper-highlights">
+          <div class="highlight-item">
+            <span class="highlight-icon"><i class="fas fa-rocket"></i></span>
+            <div>
+              <strong>50&times; Throughput</strong>
+              <p>Pixel throughput improvement over baseline through hardware-algorithm co-design.</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-icon"><i class="fas fa-tv"></i></span>
+            <div>
+              <strong>720&times;480 Real-time</strong>
+              <p>Real-time neural game rendering at 26.4/48.3 FPS with only 2.7ms equivalent latency.</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-icon"><i class="fas fa-memory"></i></span>
+            <div>
+              <strong>Memory Wall Breakthrough</strong>
+              <p>Asymmetric resource allocation &amp; memory-centric operator fusion on multi-accelerator clusters.</p>
+            </div>
+          </div>
+        </div>
+
+        <details class="paper-abstract">
+          <summary>Abstract</summary>
+          <p>
+            We present a hardware-algorithm co-design framework that breaks through the "Memory Wall"
+            bottleneck in generative game engines. Our approach features an asymmetric resource allocation
+            strategy for sequence parallelism, a memory-centric operator fusion scheme, and manifold-aware
+            latent extrapolation for temporal redundancy elimination. Validated on a cluster of programmable
+            AI accelerators, the system achieves real-time 720&times;480 neural game frame generation with
+            50&times; pixel throughput improvement, running racing and platformer game benchmarks at
+            26.4/48.3 FPS with only 2.7ms equivalent latency.
+          </p>
+        </details>
+      </div>
+
+      <!-- Research Interests -->
+      <div class="research-interests reveal">
+        <h3>Research Interests</h3>
+        <div class="interest-tags">
+          <span class="interest-tag">Generative Game Engines</span>
+          <span class="interest-tag">Real-time Neural Rendering</span>
+          <span class="interest-tag">Video Generation Acceleration</span>
+          <span class="interest-tag">Hardware-Algorithm Co-Design</span>
+          <span class="interest-tag">Diffusion Model Optimization</span>
+          <span class="interest-tag">3D Gaussian Splatting</span>
+          <span class="interest-tag">Distributed Inference Systems</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       EXPERIENCE SECTION (Work + Education)
+       ============================================= -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="title-icon"><i class="fas fa-road"></i></span>
+        Experience
+      </h2>
+      <div class="timeline">
+        <!-- PhD -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot edu"></div>
+          <div class="timeline-date">2024.09 — Present</div>
+          <div class="timeline-card">
+            <div class="timeline-badge edu">Education</div>
+            <h3>PhD Student in AI</h3>
+            <p class="timeline-org">SUSTech &amp; ZGC Academy · AI Game Lab</p>
+            <p>National AI Program. Research focus: generative game engines, real-time neural rendering, video generation acceleration.</p>
+          </div>
+        </div>
+        <!-- Work -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot work"></div>
+          <div class="timeline-date">2023.07 — 2024.09</div>
+          <div class="timeline-card">
+            <div class="timeline-badge work">Work</div>
+            <h3>GPU System Algorithm Engineer</h3>
+            <p class="timeline-org">CEC Microelectronics · 深圳中微电科技（中国电子集团）</p>
+            <ul>
+              <li><strong>High-performance Kernel Development:</strong> CUDA/C++ optimization of GEMM & convolution operators on domestic GPU chips.</li>
+              <li><strong>AIGC Deployment:</strong> Full-stack deployment of Stable Diffusion on proprietary GPUs — operator fusion, memory optimization, and inference acceleration.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Master -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot edu"></div>
+          <div class="timeline-date">2020.09 — 2023.07</div>
+          <div class="timeline-card">
+            <div class="timeline-badge edu">Education</div>
+            <h3>M.S. Electronic Information</h3>
+            <p class="timeline-org">Tsinghua University · Shenzhen International Graduate School</p>
+          </div>
+        </div>
+        <!-- Bachelor -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot edu"></div>
+          <div class="timeline-date">2016.09 — 2020.07</div>
+          <div class="timeline-card">
+            <div class="timeline-badge edu">Education</div>
+            <h3>B.S. Biomedical Engineering</h3>
+            <p class="timeline-org">Guangzhou University of Chinese Medicine</p>
+            <p><strong>Ranked 1st</strong> in major — Recommended admission to Tsinghua University for M.S.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       SKILLS SECTION
+       ============================================= -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="title-icon"><i class="fas fa-code"></i></span>
+        Technical Skills
+      </h2>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <h3><i class="fas fa-terminal"></i> Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C/C++</span>
+            <span class="skill-tag highlight">CUDA</span>
+            <span class="skill-tag">Shell</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3><i class="fas fa-brain"></i> Deep Learning</h3>
+          <div class="skill-tags">
+            <span class="skill-tag highlight">PyTorch</span>
+            <span class="skill-tag">Diffusion Models</span>
+            <span class="skill-tag">Transformer</span>
+            <span class="skill-tag">Reinforcement Learning</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3><i class="fas fa-gamepad"></i> Game Technology</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Unity</span>
+            <span class="skill-tag">Unreal Engine</span>
+            <span class="skill-tag highlight">3D Gaussian Splatting</span>
+            <span class="skill-tag">NeRF</span>
+            <span class="skill-tag">Real-time Rendering</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3><i class="fas fa-server"></i> Systems &amp; Infrastructure</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Distributed Inference (TP/MP)</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3><i class="fas fa-flask"></i> Research Focus</h3>
+          <div class="skill-tags">
+            <span class="skill-tag highlight">Video Generation Acceleration</span>
+            <span class="skill-tag">DiT / VAE Optimization</span>
+            <span class="skill-tag">SageAttention</span>
+            <span class="skill-tag">W8A8 Quantization</span>
+            <span class="skill-tag">rCM Distillation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       FOOTER / CONTACT
+       ============================================= -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          <h2>Let's Connect</h2>
+          <p>Interested in AI for Games, generative engines, or neural rendering?<br>
+          Feel free to reach out — always happy to discuss research and collaboration.</p>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:s-zw24@bjzgca.edu.cn" class="footer-link" title="Email">
+            <i class="fas fa-envelope"></i>
+            <span>s-zw24@bjzgca.edu.cn</span>
+          </a>
+          <a href="https://github.com/zengwei-code" target="_blank" class="footer-link" title="GitHub">
+            <i class="fab fa-github"></i>
+            <span>github.com/zengwei-code</span>
+          </a>
+          <a href="https://arxiv.org/abs/2602.00608" target="_blank" class="footer-link" title="arXiv">
+            <i class="fas fa-file-alt"></i>
+            <span>arXiv:2602.00608</span>
+          </a>
+          <!-- TODO: Add Google Scholar link when available -->
+          <!-- <a href="https://scholar.google.com/..." target="_blank" class="footer-link">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Google Scholar</span>
+          </a> -->
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Zeng Wei. Built with care for the game industry.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
