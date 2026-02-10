@@ -176,7 +176,7 @@ img {
    BLOG HOME — Hero
    ============================================ */
 .blog-hero {
-  padding: calc(var(--nav-height) + 60px) 0 48px;
+  padding: calc(var(--nav-height) + 48px) 0 32px;
   text-align: center;
 }
 

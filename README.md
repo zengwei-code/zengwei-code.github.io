@@ -1,6 +1,6 @@
 # Zeng Wei — Personal Academic Portfolio
 
-A clean, dark-themed personal portfolio website for AI for Games research, designed for GitHub Pages deployment.
+A clean, dark-themed personal portfolio website for AI for Games research, designed for GitHub Pages deployment. Includes a technical blog system with Markdown rendering, code highlighting, and LaTeX math support.
 
 ## Quick Start
 
@@ -73,6 +73,105 @@ For a demo video:
 
 Find the corresponding section in `index.html` and edit the HTML directly. Each section is clearly commented.
 
+---
+
+## Blog System
+
+The blog supports Markdown articles with code syntax highlighting (highlight.js), LaTeX math formulas (KaTeX), and tables. Articles are organized by **series** — each series is a focused deep-dive on one topic.
+
+### Blog File Structure
+
+```
+blog/
+├── index.html          ← Blog home page (series listing)
+├── post.html           ← Article reader (Markdown renderer)
+├── blog.css            ← Blog styles
+├── blog.js             ← Blog home logic
+├── posts.json          ← Article metadata (titles, descriptions, tags)
+└── posts/
+    ├── game-rendering-engine/
+    │   ├── 01.md
+    │   ├── 02.md
+    │   └── ...
+    └── generative-game-engine/
+        ├── 01.md
+        └── ...
+```
+
+### Add a New Article to an Existing Series
+
+1. Write your article in Markdown (`.md`) format.
+2. Place it in the corresponding series folder with the next number:
+   ```
+   blog/posts/<series-id>/XX.md
+   ```
+3. Open `blog/posts.json` and add an entry to the series `articles` array:
+   ```json
+   {
+     "id": "XX",
+     "title": "Your Article Title",
+     "description": "A brief one-line description",
+     "date": "2026-03",
+     "tags": ["Tag1", "Tag2"]
+   }
+   ```
+4. Commit and push. Done.
+
+### Add a New Series
+
+1. Create a new folder under `blog/posts/`:
+   ```
+   blog/posts/your-series-id/
+   ```
+2. Place your Markdown articles inside (`01.md`, `02.md`, ...).
+3. Open `blog/posts.json` and add a new series object to the `series` array:
+   ```json
+   {
+     "id": "your-series-id",
+     "title": "系列中文标题",
+     "titleEn": "Series English Title",
+     "description": "A description of what this series covers.",
+     "icon": "fa-icon-name",
+     "color": "#hex-color",
+     "gradient": "linear-gradient(135deg, #color1, #color2)",
+     "articles": [
+       {
+         "id": "01",
+         "title": "First Article Title",
+         "description": "Brief description",
+         "date": "2026-03",
+         "tags": ["Tag1"]
+       }
+     ]
+   }
+   ```
+4. (Optional) Update the blog teaser cards in `index.html` (search for `blog-teaser-cards`) to showcase the new series on the homepage.
+
+### Markdown Features Supported
+
+| Feature | Syntax | Rendering |
+|---------|--------|-----------|
+| Code blocks | ` ```python ... ``` ` | highlight.js syntax highlighting |
+| Inline code | `` `code` `` | Styled inline code |
+| LaTeX block | `$$E = mc^2$$` | KaTeX display math |
+| LaTeX inline | `$\alpha$` | KaTeX inline math |
+| Tables | Standard GFM tables | Styled dark tables |
+| Blockquotes | `> text` | Accent-bordered quote |
+| Images | `![alt](url)` | Rounded with shadow |
+| Links | `[text](url)` | Accent-colored with underline |
+
+### Article URL Format
+
+Articles are accessed via URL parameters:
+
+```
+blog/post.html?s=<series-id>&p=<article-id>
+```
+
+Example: `blog/post.html?s=game-rendering-engine&p=01`
+
+---
+
 ## Customization
 
 ### Colors
@@ -93,16 +192,25 @@ Edit CSS custom properties in `style.css`:
 
 Replace `assets/photo.jpg` with your preferred photo. The circular crop is handled by CSS.
 
-## File Structure
+## Full File Structure
 
 ```
 online-resume/
-├── index.html      ← Main page (edit content here)
-├── style.css       ← Styling (edit colors/layout here)
-├── script.js       ← Animations & navigation
+├── index.html          ← Main portfolio page
+├── style.css           ← Portfolio styles
+├── script.js           ← Portfolio animations & navigation
 ├── assets/
-│   ├── photo.jpg   ← Profile photo
-│   └── (add paper figures, demo videos here)
+│   ├── photo.jpg       ← Profile photo
+│   └── paper-teaser.png
+├── blog/
+│   ├── index.html      ← Blog home (series listing)
+│   ├── post.html       ← Article reader
+│   ├── blog.css        ← Blog styles
+│   ├── blog.js         ← Blog home logic
+│   ├── posts.json      ← Article metadata
+│   └── posts/          ← Markdown articles by series
+│       ├── game-rendering-engine/
+│       └── generative-game-engine/
 └── README.md
 ```
 
@@ -110,7 +218,8 @@ online-resume/
 
 - Pure HTML5 + CSS3 + Vanilla JavaScript
 - No build step, no framework dependencies
-- Google Fonts (Inter) + Font Awesome icons (CDN)
+- Google Fonts (Inter, JetBrains Mono) + Font Awesome icons (CDN)
+- Blog rendering: [marked.js](https://github.com/markedjs/marked) + [highlight.js](https://highlightjs.org/) + [KaTeX](https://katex.org/) (all via CDN)
 - Responsive design (mobile + desktop)
 - IntersectionObserver for scroll animations
 - GitHub Pages compatible (static files only)
