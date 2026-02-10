@@ -718,6 +718,94 @@ img {
 }
 
 /* ============================================
+   BLOG TEASER (in Research section)
+   ============================================ */
+.blog-teaser {
+  margin-top: 36px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.blog-teaser h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.blog-teaser h3 i {
+  color: var(--accent-light);
+}
+
+.blog-teaser-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+}
+
+.blog-teaser-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.blog-teaser-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  transition: all 0.25s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-teaser-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.1);
+  color: inherit;
+}
+
+.blog-teaser-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.blog-teaser-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.blog-teaser-info strong {
+  font-size: 0.92rem;
+  color: var(--text-primary);
+}
+
+.blog-teaser-info span {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 640px) {
+  .blog-teaser-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================
    EXPERIENCE TIMELINE
    ============================================ */
 .timeline {

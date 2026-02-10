@@ -1,0 +1,124 @@
+{
+  "series": [
+    {
+      "id": "game-rendering-engine",
+      "title": "游戏渲染引擎",
+      "titleEn": "Game Rendering Engine",
+      "description": "从像素方块到照片级真实——全面解析三十年游戏图形技术的进化之路。涵盖渲染管线、PBR材质、全局光照、Nanite虚拟几何体、AI超分辨率等核心技术。",
+      "icon": "fa-cube",
+      "color": "#22d3ee",
+      "gradient": "linear-gradient(135deg, #06b6d4, #3b82f6)",
+      "articles": [
+        {
+          "id": "01",
+          "title": "三十年图形进化史：从像素方块到照片级真实",
+          "description": "从 Wolfenstein 3D 到 GTA VI，回顾游戏渲染技术的每一个关键转折点",
+          "date": "2026-01",
+          "tags": ["历史", "GPU", "图形学"]
+        },
+        {
+          "id": "02",
+          "title": "实时渲染管线全解析：一帧画面的诞生之旅",
+          "description": "从顶点着色器到后处理，逐阶段拆解现代渲染管线的每个环节",
+          "date": "2026-01",
+          "tags": ["渲染管线", "GPU", "着色器"]
+        },
+        {
+          "id": "03",
+          "title": "材质与光照的科学：PBR如何统一了游戏画面",
+          "description": "基于物理的渲染如何让游戏画面从「调参玄学」走向「物理正确」",
+          "date": "2026-01",
+          "tags": ["PBR", "BRDF", "材质系统"]
+        },
+        {
+          "id": "04",
+          "title": "全局光照的圣杯之战：从光线追踪到Lumen",
+          "description": "从光线追踪到 Lumen，追溯全局光照技术从离线到实时的征程",
+          "date": "2026-01",
+          "tags": ["光线追踪", "GI", "Lumen"]
+        },
+        {
+          "id": "05",
+          "title": "万亿多边形的秘密：Nanite与虚拟几何体革命",
+          "description": "Nanite 如何让影视级模型直接进入游戏，虚拟几何体的前世今生",
+          "date": "2026-01",
+          "tags": ["Nanite", "LOD", "虚拟几何体"]
+        },
+        {
+          "id": "06",
+          "title": "以假乱真的像素魔法：DLSS、FSR与AI超分辨率",
+          "description": "DLSS、FSR 和 AI 超分辨率技术如何用更少的像素创造更清晰的画面",
+          "date": "2026-01",
+          "tags": ["DLSS", "FSR", "超分辨率"]
+        },
+        {
+          "id": "07",
+          "title": "群雄逐鹿：全球顶级游戏引擎技术全景",
+          "description": "Unreal、Unity、CryEngine 等顶级引擎的技术路线对比与生态分析",
+          "date": "2026-01",
+          "tags": ["Unreal", "Unity", "引擎对比"]
+        },
+        {
+          "id": "08",
+          "title": "学术前沿：正在改变游戏规则的渲染研究",
+          "description": "NeRF、3DGS、Neural Radiance Cache 等前沿研究如何重塑渲染未来",
+          "date": "2026-01",
+          "tags": ["NeRF", "3DGS", "学术前沿"]
+        },
+        {
+          "id": "09",
+          "title": "下一个十年：游戏渲染的终极形态与未解难题",
+          "description": "全路径追踪、云渲染、AI原生引擎——未来十年的技术趋势与终极挑战",
+          "date": "2026-01",
+          "tags": ["未来趋势", "云渲染", "AI原生"]
+        }
+      ]
+    },
+    {
+      "id": "generative-game-engine",
+      "title": "生成式游戏引擎",
+      "titleEn": "Generative Game Engine",
+      "description": "当神经网络取代光栅化管线——深入解读生成式游戏引擎的核心思想、系统瓶颈与硬件-算法协同突破方案。",
+      "icon": "fa-brain",
+      "color": "#a855f7",
+      "gradient": "linear-gradient(135deg, #8b5cf6, #ec4899)",
+      "articles": [
+        {
+          "id": "01",
+          "title": "生成式游戏引擎：从渲染到生成的范式革命",
+          "description": "从指令式渲染到神经网络生成——理解这场颠覆性的游戏引擎范式转移",
+          "date": "2026-02",
+          "tags": ["世界模型", "范式革命", "DiT"]
+        },
+        {
+          "id": "02",
+          "title": "突破内存墙：高分辨率神经游戏的瓶颈与突围",
+          "description": "为什么 64×64 到 720×480 如此困难？深入解析内存墙问题与解决之道",
+          "date": "2026-02",
+          "tags": ["内存墙", "高分辨率", "序列并行"]
+        },
+        {
+          "id": "03",
+          "title": "异构计算架构：让AI加速器集群高效协作",
+          "description": "5:3 异构资源分配策略如何让多加速卡集群发挥最大效能",
+          "date": "2026-02",
+          "tags": ["异构计算", "资源分配", "集群"]
+        },
+        {
+          "id": "04",
+          "title": "算子融合与流形外推：从芯片级到算法级的极致优化",
+          "description": "以内存为中心的算子融合与流形感知潜空间外推的深度技术剖析",
+          "date": "2026-02",
+          "tags": ["算子融合", "流形外推", "优化"]
+        },
+        {
+          "id": "05",
+          "title": "涌现物理与符号逻辑：神经游戏引擎的未来",
+          "description": "当神经网络自主学会物理定律——生成式引擎的终极愿景与开放问题",
+          "date": "2026-02",
+          "tags": ["涌现物理", "符号逻辑", "未来"]
+        }
+      ]
+    }
+  ]
+}
